@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checklist</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+       <header>
+        <p>Joseph Pedraza | Front end Software Engineer</p>
+       </header>
+       
+       <body>
+        <h1 id="greeting" class="slide-in">Good morning Joey!</h1>
+          <span id="date">25</span>
+
+     <ul id="MorningList">
+        <li><label><input type="checkbox" onchange="MyList(this)">Work out</label></li>
+        <li><label><input type="checkbox" onchange="MyList(this)">Go to class</label></li>
+        <li><label><input type="checkbox"  onchange="MyList(this)">Wake up at 7:00AM</label></li>
+        <li><label><input type="checkbox"  onchange="MyList(this)">Study JavaScript</label></li>
+        <li><label><input type="checkbox"  onchange="MyList(this)">Go to work</label></li>
+        <li><label><input type="checkbox"  onchange="MyList(this)">Catch up on notes</label></li>
+        <li><label><input type="checkbox"  onchange="MyList(this)">Get at least 8 hours of sleep</label></li>
+     </ul>
+
+     <br><br>
+
+     <ul id="AfternoonList">
+      <li><label><input type="checkbox" onchange="MyList(this)">Do some of your homework</label></li>
+      <li><label><input type="checkbox" onchange="MyList(this)">Go workout</label></li>
+      <li><label><input type="checkbox" onchange="MyList(this)">Go shopping if you need to</label></li>
+      <li><label><input type="checkbox" onchange="MyList(this)">Go to work</label></li>
+     </ul>
+
+     <ul id="EveningList">
+      <li><label><input type="checkbox" onchange="MyList(this)">Study for a bit</label></li>
+      <li><label><input type="checkbox" onchange="MyList(this)">If all assignments are done, then either study or play a game, watch a tv show/movie, or play with your friends</label></li>
+      <li><label><input type="checkbox" onchange="MyList(this)">Go to bed at a reasonable hour</label></li>
+     </ul>
+
+      <button onclick="mylist(fact)">Fun fact!</button>
+
+      <button onclick="taskcompleted()">Tasks Completed!</button>
+     <script src="script.js"></script>
+
+   <section id="Assurance">
+      <h1>Have you done your daily tasks today?</h1>
+      <button onclick="cleartasks()">Tasks cleared!</button>
+   </section>
+
+   <div id="satisfaction">
+      <input type="text" id="satisfactionInput" placeholder="How satisfied are you with your day?">
+      <input type="submit" id="satisfactionSubmit" value="Submit" onclick="submitSatisfaction()">
+      <p id="satisfactionMessage"></p>
+   </div>
+       </body>
+       </html>
